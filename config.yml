@@ -1,0 +1,16 @@
+title: BLaudio
+description: Here you will find useful scripts for configuring bluetooth headphones
+template:
+  repo: blaudio-template
+  name: blaudio
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
